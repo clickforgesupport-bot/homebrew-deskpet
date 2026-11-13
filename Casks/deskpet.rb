@@ -19,8 +19,9 @@ cask "deskpet" do
   app "DeskPet.app"
 
   # L'app non è notarizzata: senza questo macOS la bloccherebbe al primo avvio.
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/DeskPet.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/DeskPet.app"],
+                          writable_paths: ["DeskPet.app"], writable_base: :appdir
   end
 
   uninstall quit: "it.diluzio.deskpet"

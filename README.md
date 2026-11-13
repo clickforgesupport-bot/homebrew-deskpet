@@ -3,10 +3,10 @@
 Un cucciolo (gattino, papera o emu) che vive sul Dock del Mac: covi l'uovo, lo fai crescere e lo mandi a trovare i colleghi.
 
 ```sh
-brew tap clickforgesupport-bot/deskpet
-brew trust clickforgesupport-bot/deskpet
-brew install --cask deskpet
+brew tap clickforgesupport-bot/deskpet && brew trust clickforgesupport-bot/deskpet && brew install --cask clickforgesupport-bot/deskpet/deskpet
 ```
+
+Se avevi già installato DeskPet a mano, chiudilo e aggiungi `--force` all'ultimo comando.
 
 `brew trust` serve una volta sola: dalle versioni recenti Homebrew chiede di confermare i tap di terze parti.
 
