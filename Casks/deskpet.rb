@@ -1,6 +1,6 @@
 cask "deskpet" do
-  version "0.11.1"
-  sha256 "d7869b35dbff582eec86068024fbe9785bdab361c213a979214e0bf09589a68a"
+  version "0.11.2"
+  sha256 "57d561cfd757b3c7b76b942a3a0aab1fb9ee793f5a416d555db370bfaf577351"
 
   url "https://deskpet-dev.clickforge.workers.dev/DeskPet-#{version}.zip"
   name "DeskPet"
